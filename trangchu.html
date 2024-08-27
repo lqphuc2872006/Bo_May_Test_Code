@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SHOP CAFFE</title>
+    <link rel="stylesheet" href="style.css/trangchu.css">
+    <!-- <link rel="stylesheet" href="JS/coffe.JS"> -->
+
+</head>
+<body>
+    <header>
+        <div>
+            <img src="../image/logocafe.png" alt="" class="logo">    
+        </div>
+        <div class="menu">
+            <ul>
+                <li><a href="#">Trang chủ</a></li>
+                <li><a href="./nhanvien.html">Nhân viên</a></li>
+                <li><a href="https://www.facebook.com/nhatphuc2872006/" target="_blank">Liên hệ</a></li>               
+            </ul>
+        </div>      
+    <button class="account">
+        <a href="signin.html"><img src=".//image/admin.png" alt=""></a> 
+        <a href=""><img src="../image/shoping1.png" alt=""></a> 
+    </button>
+    </header>
+
+   <img id="img" onclick="changeimg()" src="../image/banner1.jpg" alt="" class="banner">
+    <script>
+         var index = 1;
+         var anh1 = ["../image/banner1.jpg","../image/banner2.jpg","../image/banner3.jpg"];
+        function changeimg(){     
+            document.getElementById('img').src = anh1[index];
+            index++;
+            if(index==3){
+                index=0;
+            }           
+        }
+        setInterval(changeimg,2000);   
+    </script>
+<!-- anh tu dong -->
+  <div class="carousel">
+   
+    <div class="dots">
+        <span class="dot" onclick="setImage(0)"></span>
+        <span class="dot" onclick="setImage(1)"></span>
+        <span class="dot" onclick="setImage(2)"></span>
+    </div>
+</div>
+<script>
+    var index = 0;
+   
+    var dots = document.querySelectorAll('.dot');
+
+    function changeimg() {
+        document.getElementById('img').src = anh1[index];
+        updateDots();
+        index = (index + 1) % anh1.length; // Cập nhật chỉ số ảnh, vòng lại đầu khi đến cuối danh sách
+    }
+
+    function updateDots() {
+        dots.forEach((dot, i) => {
+            dot.className = i === index ? 'dot active' : 'dot';
+        });
+    }
+
+    function setImage(newIndex) {
+        index = newIndex;
+        document.getElementById('img').src = anh1[index];
+        updateDots();
+    }
+
+    // Thiết lập vòng lặp để thay đổi ảnh mỗi 2 giây (2000 milliseconds)
+    setInterval(changeimg, 2000);
+
+    // Cập nhật trạng thái của các chấm khi trang tải
+    updateDots();
+</script>
+
+<style>
+    /* Basic styling */
+    .container {
+        position: relative;
+        display: inline-block;
+    }
+    #sign-options {
+        display: none;
+        position: absolute;
+        left: 100%;
+        top: 0;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        padding: 10px;
+        margin-left: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        z-index: 1000;
+        display: inline-flexbox;
+    }
+    .sign-option {
+        margin: 10px 0;
+        font-size: 16px;
+        cursor: pointer;
+       
+    }
+</style>
+</head>
+<body>
+
+
+
+</div>
+
+
+</body>
+</html>

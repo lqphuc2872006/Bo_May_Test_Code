@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css/nhanvien.css">
+    <title>Nhân viên</title>
+</head>
+    <header>
+        <div>
+           <a href="./trangchu.html"> <img src="../image/logocafe.png" alt="" class="logo">   </a> 
+        </div>
+    <button class="account">
+        <a href="signin.html"><img src=".//image/admin.png" alt=""></a> 
+        <a href=""><img src="../image/shoping1.png" alt=""></a> 
+    </button>
+    </header>
+   
+    <body>
+        <div class="box">
+           <div class="box2"> 
+            <img class="admin" src="./image/anhad.jpeg" alt="">
+            <label class="textanh" for="">Lê Quang Phúc</label>
+            <label class="textbe" for="">(Chủ shop)</label>
+           </div>
+           <div class="box3">
+            <label id="clickthongtin1" class="textTT" for="">Thông Tin</label>    
+            <label id="thongtinchitiet1" for="">Nơi ở : Hà Nội, Trâu Qùy Gia Lâm- Hà Nội. <br>
+                Sinh Viên : FPT Polytichnic Hà Nội <br>
+                Quê Quán : Kiên Thành, Trâu Qùy - Gia Lâm            
+            </label>
+                <script>
+                    var clicktt = document.getElementById('clickthongtin1');
+                    var ttct = document.getElementById('thongtinchitiet1');
+
+                    clicktt.addEventListener('click' ,function(){
+                        if (ttct.style.display === 'none') {
+                            ttct.style.display = 'block'
+                        } else {
+                            ttct.style.display = 'none'
+                        } 
+                    });
+                </script>
+                <br>
+                <label class="textTT" id="clickthongtin2" for="">Sở Thích</label>
+                <label id="thongtinchitiet2" for="">
+                    Thích các em gái chân dài cũng như các 
+                    cô gái nhà giàu bao nuôi. <br> Hoặc các em loli chân bé. <br>
+                    Gái Anime cũng được :DD </label>
+                    <script>
+                        var sothich = document.getElementById('clickthongtin2');
+                        var tt = document.getElementById('thongtinchitiet2');
+                        clickthongtin2.addEventListener('click',function(){
+                            if (tt.style.display === 'none') {
+                                tt.style.display = 'block'
+                            } else {
+                                tt.style.display ='none'
+                            }
+                        });
+
+                    </script>
+            <br>
+            <label id="clickthongtin3" class="textTT" for="">Ngày Sinh</label>
+            <label id="thongtinchitiet3" for="thongtinchitiet3">28/07/2006</label>
+            <script>
+                var clickns = document.getElementById('clickthongtin3');
+                var ttns = document.getElementById('thongtinchitiet3');
+                
+                clickns.addEventListener('click' ,function(){
+                    if (ttns.style.display === 'none') {
+                        ttns.style.display = 'block'
+                    } else {
+                        ttns.style.display = 'none'
+                    }
+                })
+            </script>
+        </div>
+    
+       
+    </body>
+</html>

@@ -1,0 +1,107 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Đảm bảo body chiếm toàn bộ chiều cao của viewport */
+}
+body {
+    background-color: orange; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+.white-square {
+        padding: 20px;
+        width: 700px; 
+        height: 700px;    
+        background-color: white;
+        border-radius: 30px; 
+}
+.logo{
+    height: auto;
+    width: 200px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.tieude{
+    margin-top: 10px;
+    text-align: center;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: #964B00;
+}
+.tieudesdt{
+    margin-top: 10px;
+    text-align: center;
+    margin-right: 150px;
+    font-family: monospace;
+    font-size: 30px;
+    font-weight: bold;
+    color: #964B00;
+}
+.textnguoidung{
+    border: 2px solid #964B00; /* Màu viền của nút */
+    width: 70%;
+    height: 30px;
+    border-radius: 20px;
+    text-align: center;
+}
+.text{  
+    text-align: center;
+}
+.textsdt{
+    border: 2px solid #964B00; /* Màu viền của nút */
+    width: 55%;
+    height: 25px;
+    border-radius: 20px;
+    text-align: center;
+}
+.SDT{  
+    margin-left: 100px;
+   width: 106%;
+   
+}
+.btncode{
+    width: 10%;
+    height: 35px;
+    border-radius: 20px;
+    text-align: center;
+}
+.btncode:hover{
+    font-weight: bold;
+}
+.labelcode{
+    text-align: center;
+    margin-left: 70px;
+}
+
+.clickbutton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 30%;
+    height: 30px;
+   
+    font-size: 20px;
+    background-color: white;
+    color: #964B00;
+    border: 2px solid #964B00;
+}
+.clickbutton:hover{
+    background-color: rgb(247, 245, 245);
+    
+}
+.minilogo{
+    display: inline-block;
+    height: 50px;
+    padding: 20px;
+}
+.divlogo{
+    text-align: center;
+}
+.linkdangnhap{
+    text-decoration: none;
+}

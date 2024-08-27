@@ -1,0 +1,77 @@
+/* Responsive adjustments */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    width: 100%;
+    height: auto;
+    background: orange;
+    display: flex;
+    padding: 10px 20px; /* Thêm padding để có khoảng cách hợp lý */
+    justify-content: space-between; 
+    align-items: center; /* Căn giữa các phần tử theo chiều dọc */
+}
+
+.logo { 
+    width: 180px;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;  
+    padding: 0;
+    margin: 0;
+    display: flex; /* Đảm bảo menu hiển thị theo hàng ngang */
+    gap: 20px; /* Khoảng cách giữa các mục menu */
+}
+
+.menu a {
+    color: #964B00;
+    padding: 0 20px; /* Giảm padding để phù hợp với các màn hình nhỏ */
+    text-decoration: none;
+    font-size: 20px; /* Điều chỉnh kích thước font để phù hợp với màn hình nhỏ */
+}
+
+.menu a:hover {
+    color: #d87d22;
+}
+
+.menu {
+    margin-top: 20px; /* Giảm margin-top để phù hợp với bố cục */
+    font-size: 20px; /* Điều chỉnh kích thước font để phù hợp với màn hình nhỏ */
+}
+
+.account {
+    border: none;
+    background-color: orange;
+    display: flex;
+    align-items: center; /* Căn giữa các icon theo chiều dọc */
+    gap: 15px; /* Khoảng cách giữa các icon */
+}
+
+.account a {
+    padding: 0 15px; 
+}
+
+.banner {
+    display: block;
+    margin: 20px auto; /* Thêm margin để có khoảng cách hợp lý */
+    width: 100%;
+    height: auto; /* Để banner tự điều chỉnh chiều cao theo nội dung */
+   
+}
+@media (max-width: 480px) {
+    .menu ul {
+        flex-direction: column; /* Đặt các mục menu theo cột khi màn hình rất nhỏ */
+        align-items: center;
+    }
+
+
+    .account {
+        flex-direction: column; /* Sắp xếp các icon theo cột */
+        align-items: center;
+    }}

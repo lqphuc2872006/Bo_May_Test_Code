@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    
+}
+header{
+    width:100% ;
+    height: auto;
+    background: orange;
+    display: flex;
+    padding: 10px;
+    justify-content: space-between; 
+}
+.logo{ 
+    width: 180px;
+    height: auto;
+}
+
+.menu {
+   
+    font-size: 25px;
+    text-align: left; 
+    margin-top: 50px;
+
+}
+.account{
+    border: none;
+    background-color: orange;
+    width: auto;
+}
+.account a{
+    padding: 0 15px; 
+}
+.box{
+    background-color: orange;
+    border-top-left-radius: 0;
+    border-top-right-radius: 30px; 
+    border-bottom-left-radius: 0; 
+    border-bottom-right-radius: 30px; 
+    height: auto;
+    width: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    border: 2px solid  black;
+    overflow: hidden; /* Đảm bảo các phần tử nổi không bị tràn ra ngoài */
+}
+.box2{  
+    margin-left: 50px;
+    display: inline-block;
+    padding: 10px; 
+    text-align: center; 
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: white;
+    float: left;
+    
+}
+@media (max-width: 480px) {
+    .box2 {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        float: none;
+        text-align: center;
+        width: fit-content; /* Đảm bảo chiều rộng tự động theo nội dung */
+      
+        
+    }
+}
+.box3 {
+    margin-left: 10%;
+    padding: 10px;
+    float: left;
+   
+}
+.admin{
+    
+    width: auto;
+    height: 400px;
+}
+.textanh{
+    color: #964B00;
+    margin-top: 10px;
+    display: block;
+    font-weight: bold;
+    font-size: 20px;
+}
+.textbe{
+    font-weight: bold;
+    color: red;
+}
+.textTT{
+    color: #964B00;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+#thongtinchitiet1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none; 
+    font-size: 20px;
+    color: #964B00;
+}
+#thongtinchitiet2 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none; 
+    font-size: 20px;
+    color: #964B00;
+}
+#thongtinchitiet3 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    margin-top: 20px;
+    display: none; 
+    font-size: 20px;
+    color: #964B00;
+}

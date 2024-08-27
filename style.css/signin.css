@@ -1,0 +1,96 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%; /* Đảm bảo body chiếm toàn bộ chiều cao của viewport */
+    box-sizing: border-box; /* Đảm bảo padding và viền được tính vào tổng chiều rộng và chiều cao của phần tử */
+
+}
+
+body {
+    background-color: orange; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+}
+
+.white-square {
+    width: 700px; /* Chiếm toàn bộ chiều rộng của màn hình */
+    max-width: 1000px; /* Đặt chiều rộng tối đa */
+    height: auto; /* Chiều cao tự động điều chỉnh theo nội dung */
+    padding: 20px; /* Thêm khoảng trống bên trong */
+    background-color: white;
+    border-radius: 30px;
+    box-sizing: border-box; /* Đảm bảo padding không làm thay đổi kích thước */
+    margin: 20px; /* Thêm khoảng cách với các cạnh của màn hình */
+}
+.logo{
+    height: auto;
+    width: 200px;
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.chu{
+    font-family: monospace;
+    display: block;
+    margin-top: 10px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px; 
+    color: #964B00;
+}
+.textboder{
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 60%;;
+    height: 40px;
+    border-radius: 30px ;
+    border: 2px solid #964B00; /* Màu viền của nút */
+    outline: none; 
+}
+
+.textdangnhap{
+    padding: 20px;
+}
+.textphu{
+    text-align: right;
+    padding: 10px;
+    margin-right: 190px;
+}
+.nexttext{
+    color: #964B00;
+    text-decoration: none;
+}
+.nexttext:hover{
+    text-decoration: underline;
+}
+.clickbutton{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    width: 30%;
+    height: 30px;
+   
+    font-size: 20px;
+    background-color: white;
+    color: #964B00;
+    border: 2px solid #964B00;
+}
+.clickbutton:hover{
+    background-color: rgb(247, 245, 245);
+}
+.minilogo{
+    display: inline-block;
+    height: 50px;
+    padding: 20px;
+}
+.divlogo{
+    text-align: center;
+}
+
