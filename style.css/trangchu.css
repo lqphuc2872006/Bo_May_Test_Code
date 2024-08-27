@@ -70,8 +70,13 @@ header {
         align-items: center;
     }
 
+    .menu a {
+        padding: 10px 0; /* Điều chỉnh padding để phù hợp với bố cục dọc */
+        font-size: 16px; /* Điều chỉnh kích thước font cho màn hình rất nhỏ */
+    }
 
     .account {
         flex-direction: column; /* Sắp xếp các icon theo cột */
         align-items: center;
-    }}
+    }
+}
