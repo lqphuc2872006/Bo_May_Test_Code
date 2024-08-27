@@ -64,7 +64,7 @@ header {
     height: auto; /* Để banner tự điều chỉnh chiều cao theo nội dung */
    
 }
-@media (max-width: 480px) {
+@media (max-width: 200px) {
     .menu ul {
         flex-direction: column; /* Đặt các mục menu theo cột khi màn hình rất nhỏ */
         align-items: center;
